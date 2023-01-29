@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="h-screen bg-[url('https://4kwallpapers.com/images/wallpapers/colorful-background-texture-multi-color-orange-illustration-3840x2160-3104.jpg')] bg-cover">
+  <div class="flex flex-3 space-x-20 justify-center">
+    <div class="space-y-3"> 
+      <h2 class="text-2xl text-center">Namn</h2>
+      <input class="text-black"  type="text" id="people-input">
+      <button class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" id="add-to-people">Lägg till</button>
+      <button class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" id="clear-people">Rensa lista</button>
+      <div id="people-container"></div>
+    </div>
+    
+    <div class="space-y-3"> 
+      <h2 class="text-2xl text-center ">Tema</h2>
+      <input class="text-black" type="text" id="themes-input">
+      <button class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" id="add-to-themes">Lägg till</button>
+      <button class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" id="clear-themes">Rensa lista</button>
+      <div id="themes-container"></div>
+    </div>
+  </div>
+  
+  <div class="text-center"> 
+    <!-- <h2 class="text-2xl space-x-20 ">Resultat</h2> -->
+    <button class="w-[10rem] space-y-20 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" id="shuffle-and-select">Generera</button>
+    <div class="text-xl " id="selected-items-container"></div>
+  </div>
+  <div id="previous-results-container">Historik</div>
+  
+  <script src="./code.js"></script>
+</body>
+</html>
